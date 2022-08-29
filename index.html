@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      }
+    
+      #heading {
+        text-align: center;
+        margin: 35px auto;
+        padding: 12px;
+        font-weight: bold;
+      }
+      .item {
+        height: auto;
+        padding: 20px;
+        background-color: rgba(0,0,0,0.3);
+        margin: 1.6%;
+        position: relative;
+        border: 2px solid black;
+        
+      }
+      .head{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: auto;
+        background-color: rgb(165, 67, 67);
+        text-align: center;
+        padding: 4px 10px;
+        
+        border: 1px solid black;
+      }
+
+      #head-1{
+        background-color: rgb(187, 123, 118);
+      }
+      #head-2 {
+        color: white;
+        background-color: rgb(165, 67, 67);
+
+      }
+      #head-3 {
+       
+        background-color: rgb(224, 212, 103);
+  
+      }
+
+      .para {
+        margin-top: 30px;
+        font-size: 20px;
+      }
+
+      @media (min-width : 992px) {
+            .item{
+                float: left;
+                width: 30%;
+            }
+      }
+      @media (min-width : 768px) and (max-width : 991px) {
+            #item-1, #item-2{
+                width: 46%;
+                float: left;
+            }
+            #item-3{
+                width: 97%;
+                clear: left;
+            }
+      }
+      @media (max-width : 767px) {
+            .item{
+                width: 97%;
+            }
+      }
+ 
+
+
+   
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Our Menu</h1>
+    <div class="item col-lg-4 col-md-6 col-sm-12" id="item-1">
+      <h2 class="head" id="head-1">Chicken</h2>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor
+        dolores dolorum. Voluptatibus ea reprehenderit voluptatum numquam et
+        ducimus vel, possimus voluptate iusto, praesentium dolore amet vero!
+        Fugiat, tenetur tempora! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.
+      </p>
+    </div>
+    <div class="item col-lg-4 col-md-6 col-sm-12" id="item-2">
+      <h2 class="head" id="head-2">Beef</h2>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor
+        dolores dolorum. Voluptatibus ea reprehenderit voluptatum numquam et
+        ducimus vel, possimus voluptate iusto, praesentium dolore amet vero!
+        Fugiat, tenetur tempora! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.
+      </p>
+    </div>
+    <div class="item col-lg-4 col-md-6 col-sm-12" id="item-3">
+      <h2 class="head" id="head-3">Sushi</h2>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor
+        dolores dolorum. Voluptatibus ea reprehenderit voluptatum numquam et
+        ducimus vel, possimus voluptate iusto, praesentium dolore amet vero!
+        Fugiat, tenetur tempora! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.
+      </p>
+    </div>
+  </body>
+</html>
